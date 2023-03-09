@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  margin: 20px 0;
+
+  li {
+    margin-right: 12px;
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      padding: 4px 25px;
+      transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+      border-radius: 24px;
+      line-height: 24px;
+
+      &:hover {
+        background-color: #aaa;
+      }
+
+      &.active {
+        background-color: #999;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

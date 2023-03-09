@@ -1,0 +1,42 @@
+.bar {
+  display: grid;
+  justify-content: space-between;
+  gap: 10px;
+  grid-template-columns: 150px 1fr 100px;
+  margin-top: 10px;
+
+  .select-box{
+    p{
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+
+  select, input {
+    padding: 10px;
+    font-size: 20px;
+  }
+  select {
+    width: 150px;
+  }
+  input {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e90ff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+}

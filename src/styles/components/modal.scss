@@ -1,0 +1,25 @@
+.modal{
+  .item{
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    cursor: default;
+  }
+
+  .close {
+    position: absolute;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    width: 13px;
+    height: 13px;
+    line-height: 0;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+  }
+
+}

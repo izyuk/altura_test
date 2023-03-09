@@ -1,0 +1,39 @@
+.item {
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  img{
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+  }
+
+  .body {
+    padding: 10px;
+    p {
+      margin-bottom: 5px;
+    }
+    .truncate {
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .link, .details {
+      display: inline-block;
+      padding: 10px;
+      background: #1e90ff;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

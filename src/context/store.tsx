@@ -1,15 +1,26 @@
-import { createContext, useState } from 'react';
+import {createContext, useState} from "react";
 import {PortalAndContextProps} from "@/interfaces";
 
-const AppContext = createContext(null);
+export const NFTContext = createContext(null);
+export const ModalContext = createContext(null);
 
-function Context({ children }: PortalAndContextProps) {
-  const [message, setMessage] = useState('');
+const NFTInitialState = {
+  name: "",
+  image: "",
+  description: "",
+  permalink: "",
+}
+
+function Context({children}: PortalAndContextProps) {
+  const [data, setData] = useState(NFTInitialState);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <AppContext.Provider value={{ message, setMessage }}>
-      {children}
-    </AppContext.Provider>
+    <NFTContext.Provider value={{data, setData}}>
+      <ModalContext.Provider value={{isOpen, setIsOpen}}>
+        {children}
+      </ModalContext.Provider>
+    </NFTContext.Provider>
   );
 }
 
